@@ -274,7 +274,9 @@ window.onload = () => {
 
 // Listeners
 
-document.getElementById("mainAvatar").onclick = () => {
+const avatar = document.getElementById("mainAvatar");
+avatar.style.cursor = "pointer";
+avatar.onclick = () => {
     let index = presets.indexOf(config) + 1;
     if (index >= presets.length)
         index = 0;
