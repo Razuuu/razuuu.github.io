@@ -59,7 +59,7 @@ html {
     border-radius: 50px;
 }
 
-@media only screen and not (max-width: 600px) {
+@media only screen and (min-width: 601px) {
     #links {
         flex-direction: row;
         padding: 20px 35px;
