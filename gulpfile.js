@@ -28,12 +28,12 @@ const html = () => pipeline(
     gulp.dest("dist")
 );
 
-const ghCNAME = cb => fs.writeFile("dist/CNAME", "lava.moe", cb);
+// const ghCNAME = cb => fs.writeFile("dist/CNAME", "lava.moe", cb);
 const ghDeploy = cb => {
     require('child_process').exec('git rev-parse HEAD', (err, stdout) => {
         ghpages.publish("dist", {
             branch: "master",
-            message: "Compiled LavaDesu/lavadesu.github.io@" + stdout.trim()
+            message: "Compiled Razuuu/razuuu.github.io@" + stdout.trim()
         }, cb);
     });
 };
